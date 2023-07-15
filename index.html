@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Safe PG Hub</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    /* Pastel Color Scheme CSS */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #f9caca;
+      padding: 20px;
+    }
+
+    h1 {
+      margin: 0;
+      color: #fff;
+      font-size: 28px;
+      text-align: center;
+      font-family: 'Arial Black', sans-serif;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 18px;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Homepage */
+    #homepage {
+      padding: 20px;
+    }
+
+    #search-bar {
+      background-color: #fde6e6;
+      padding: 10px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    #map {
+      height: 400px;
+      background-color: #fff;
+    }
+
+    /* Listings Page */
+    #listings-page {
+      padding: 20px;
+    }
+
+    #filter-options {
+      background-color: #fde6e6;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    .listing {
+      background-color: #fff;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .listing a {
+      color: #333;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    /* House Page */
+    #house-page {
+      padding: 20px;
+    }
+
+    /* Reviews Page */
+    #reviews-page {
+      padding: 20px;
+    }
+
+    /* Contact Page */
+    #contact-page {
+      padding: 20px;
+    }
+
+    /* Resources Page */
+    #resources-page {
+      padding: 20px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #f9caca;
+      padding: 10px;
+      text-align: center;
+      color: #fff;
+      font-size: 14px;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Safe PG Hub</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="listings.html">Listings</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="homepage">
+    <div id="search-bar">
+      <!-- Implement your search bar with maps here -->
+      <div id="map"></div>
+      <input type="text" placeholder="Enter location">
+      <button type="submit">Search</button>
+    </div>
+    <div id="about-section">
+      <!-- Add content for the About Us section here -->
+      <h2>About Safe PG Hub</h2>
+      <p>This website aims to provide safe and affordable PG housing options for women. We leverage user ratings and safety scores to help you find suitable accommodations.</p>
+    </div>
+  </section>
+
+  <section id="listings-page">
+    <h2>Listings</h2>
+    <div id="filter-options">
+      <!-- Add filtering options for price, amenities, and safety features here -->
+      <h3>Filter Options</h3>
+      <label for="price-range">Price Range:</label>
+      <select id="price-range">
+        <option value="0-5000">Below 5000</option>
+        <option value="5000-10000">5000-10000</option>
+        <option value="10000-15000">10000-15000</option>
+        <option value="15000-20000">15000-20000</option>
+      </select>
+      
+      <label for="amenities">Amenities:</label>
+      <input type="checkbox" id="amenities" name="amenities" value="wifi">
+      <label for="amenities">WiFi</label>
+      <input type="checkbox" id="amenities" name="amenities" value="security">
+      <label for="amenities">Security</label>
+      <input type="checkbox" id="amenities" name="amenities" value="laundry">
+      <label for="amenities">Laundry</label>
+      
+      <label for="safety-features">Safety Features:</label>
+      <input type="checkbox" id="safety-features" name="safety-features" value="cctv">
+      <label for="safety-features">CCTV</label>
+      <input type="checkbox" id="safety-features" name="safety-features" value="security-guards">
+      <label for="safety-features">Security Guards</label>
+    </div>
+    <div id="listing-results">
+      <!-- Display the available houses in the area with relevant information -->
+      <div class="listing">
+        <h3>PG House 1</h3>
+        <p>Price: $5000</p>
+        <p>Amenities: WiFi, Security</p>
+        <p>Safety Features: CCTV</p>
+        <a href="house1.html">View Details</a>
+      </div>
+      
+      <div class="listing">
+        <h3>PG House 2</h3>
+        <p>Price: $6000</p>
+        <p>Amenities: WiFi, Laundry</p>
+        <p>Safety Features: CCTV, Security Guards</p>
+        <a href="house2.html">View Details</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="house-page">
+    <!-- Separate page for each house -->
+    <!-- Include detailed information, safety features, amenities, ratings, and reviews here -->
+  </section>
+
+  <section id="reviews-page">
+    <!-- Review and ratings page -->
+    <!-- Display user-generated ratings and reviews here -->
+  </section>
+
+  <section id="contact-page">
+    <!-- Contact and support page -->
+    <!-- Include contact information and support options here -->
+  </section>
+
+ 
+
